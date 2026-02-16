@@ -1,0 +1,14 @@
+{
+    "name": "project-rahasia-dapur",
+    "version": "1.0.0",
+    "description": "Root project for Rahasia Dapur",
+    "scripts": {
+        "install-all": "npm install && cd backend_rahasia_dapur && npm install && cd ../frontend-web_rahasia_dapur && npm install",
+        "dev": "concurrently \"npm run start --prefix backend_rahasia_dapur\" \"npm run dev --prefix frontend-web_rahasia_dapur\"",
+        "server": "npm run start --prefix backend_rahasia_dapur",
+        "web": "npm run dev --prefix frontend-web_rahasia_dapur"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
